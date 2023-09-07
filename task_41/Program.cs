@@ -7,13 +7,13 @@
 
 
 Console.Write("Введите количество элементов массива: \t");
-int elemQuant = int.Parse(Console.ReadLine());
+int elemQuant = Convert.ToInt32(Console.ReadLine());
 int[] Array = new int[elemQuant];
 
 for (int i = 0; i < Array.Length; i++)
 {
     Console.Write($"Введите элемент массива под индексом {i}:  ");
-    Array[i] = int.Parse(Console.ReadLine());
+    Array[i] = Convert.ToInt32(Console.ReadLine());
 }
 Console.Write("Вывод массива: ");
 
